@@ -1,6 +1,7 @@
 const asd = () => {
   const a = 1;
   const b = 1;
-  const name = "Nicolas";
-  return name + " sumo a + b" + (a + b);
+  const firstname = "Nicolas";
+  const lastname = "Arbelaez";
+  return firstname + " " + lastname + " sumo a + b" + (a + b);
 };
