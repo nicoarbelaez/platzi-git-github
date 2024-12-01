@@ -1,1 +1,3 @@
-const asd = () => {};
+const asd = () => {
+    return "Esto es JavaScript";
+};
