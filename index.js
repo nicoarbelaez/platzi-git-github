@@ -1,3 +1,5 @@
 const asd = () => {
-    return "Esto es JavaScript con editor";
+  const a = 1;
+  const b = 1;
+  return "Nicolas sumo a + b" + (a + b);
 };
