@@ -1,5 +1,6 @@
 const asd = () => {
   const a = 1;
   const b = 1;
-  return "Nicolas sumo a + b" + (a + b);
+  const name = "Nicolas";
+  return name + " sumo a + b" + (a + b);
 };
