@@ -1,3 +1,3 @@
 const asd = () => {
-    return "Esto es JavaScript";
+    return "Esto es JavaScript con editor";
 };
