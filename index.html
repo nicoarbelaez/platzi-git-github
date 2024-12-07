@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Nicolás Arbelaez</title>
+    <style>
+      /* General Styles */
+      :root {
+        --primary-color: #114578;
+        --text-color: #e0f7fa;
+        --background-color: #085db2;
+        --card-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px;
+      }
+
+      [data-theme="light"] {
+        --primary-color: #cce7ff;
+        --text-color: #001f3f;
+        --background-color: #e0f7fa;
+        --card-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: var(--background-color);
+        color: var(--text-color);
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        background: var(--primary-color);
+        color: var(--text-color);
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .navbar a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: var(--text-color);
+      }
+
+      .section {
+        padding: 50px 0;
+      }
+
+      .footer {
+        background: var(--primary-color);
+        color: var(--text-color);
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .about-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .about-container img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: var(--card-shadow);
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+      }
+
+      .skill {
+        background: var(--primary-color);
+        color: var(--text-color);
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        box-shadow: var(--card-shadow);
+        text-align: center;
+      }
+
+      .skill img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body data-theme="light">
+    <header class="header">
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <div class="about-container">
+          <img src="img/profile.jpg" alt="Foto de Nicolás Arbelaez" />
+          <p>
+            ¡Hola! Soy Nicolás Arbelaez, un desarrollador Java Junior con 2 años de experiencia en
+            la creación de aplicaciones web robustas y eficientes. Actualmente estoy cursando un
+            programa de desarrollo profesional en Platzi, donde refuerzo mis conocimientos en
+            tecnologías modernas y metodologías ágiles. Me apasiona resolver problemas complejos y
+            transformar ideas en soluciones funcionales. <br />Mis áreas de especialización incluyen
+            el diseño de APIs RESTful, optimización de bases de datos y desarrollo backend
+            utilizando herramientas como Spring Boot y Node.js. Además, tengo experiencia trabajando
+            con bases de datos relacionales como PostgreSQL y herramientas para pruebas como
+            Postman. <br />Me considero una persona curiosa, proactiva y con un enfoque constante en
+            mejorar mis habilidades técnicas y de trabajo en equipo. Mi objetivo es seguir
+            aprendiendo y crecer profesionalmente mientras aporto valor a los proyectos en los que
+            colaboro.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="skills">
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" /> Java
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL" />
+            PostgreSQL
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js" />
+            Node.js
+          </div>
+          <div class="skill">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/906/906324.png"
+              alt="Visual Studio Code" />
+            VS Code
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" /> HTML
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" /> CSS
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" alt="Git" /> TypeScript
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Spring" /> Figma
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2>Portafolio</h2>
+        <div class="gallery">
+          <img
+            src="https://i.pinimg.com/736x/91/74/f8/9174f8bf8a3742d3ff887ca4ed7c44ed.jpg"
+            alt="Proyecto 1" />
+          <img
+            src="https://i.pinimg.com/736x/0a/5f/b7/0a5fb7c29b3b2add8f1f02b0686d6d31.jpg"
+            alt="Proyecto 2" />
+          <img
+            src="https://i.pinimg.com/736x/c9/b1/35/c9b13571b8ebe26689e02a013f694d2d.jpg"
+            alt="Proyecto 3" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+    </footer>
+
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      themeToggle.addEventListener("click", () => {
+        const currentTheme = body.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        body.setAttribute("data-theme", newTheme);
+      });
+    </script>
+  </body>
+</html>
